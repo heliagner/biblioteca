@@ -5,8 +5,10 @@ function create(livro) {
 };
 
 const read = () => {
+    if (biblioteca.forEach === 0)
+        console.log("Nenhum livro encontrado");
     biblioteca.forEach((livro, indice) => {
-        console.log(`${indice + 1} - ${livro}`);
+        console.log(indice + 1, livro);
     })
 };
 
